@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>块级元素和内联元素</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    .table {
+      width: 200px;
+      height: 100px;
+    }
+
+    .img {
+      width: 20px;
+      height: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div>块级元素</div>
+  <ul>
+    <li>div: <div class="box">盒子</div>
+    </li>
+    <li>table: <table border class="table">
+        <thead>
+          <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>张三</td>
+            <td>18</td>
+            <td>男</td>
+          </tr>
+          <tr>
+            <td>李四</td>
+            <td>20</td>
+            <td>女</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li>h1: <h4>标题</h4>
+    </li>
+    <li>p: <p>这是一个文章段落</p>
+    </li>
+  </ul>
+
+  <div>内联元素</div>
+  <ul>
+    <li>span: <span>随便一句话</span></li>
+    <li>img: <img class="img" src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/booklet.2579a53.png" alt=""></li>
+    <li>input: <input type="text" placeholder="请输入内容"></li>
+  </ul>
+</body>
+
+</html>
