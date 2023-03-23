@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BFC</title>
+  
+  <style>
+    .p {
+      background-color: red;
+    }
+    .img {
+      width: 200px;
+      height: 100px;
+    }
+    .float {
+      float: left;
+    }
+    .bfc {
+      /* overflow: hidden; */
+      /* float: left; */
+      /* position: absolute; */
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <p>BFC，块级格式化上下文，他是一块独立渲染区域，内部元素的渲染不会影响边界以外的元素，形成BFC的条件有：</p>
+  <p>1：overflow不为visible</p>
+  <p>2：float不为none</p>
+  <p>3：position为absolute或者fixed</p>
+  <p>4：display为inline-block、table-cell、table-caption、flex、inline-flex等</p>
+  
+  <div class="container bfc">
+    <img class="img float" src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/booklet.2579a53.png" alt="">
+    <p class="p bfc">这是标题</p>
+  </div>
+</body>
+</html>
