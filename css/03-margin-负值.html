@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin-负值</title>
+  <style>
+    .container {
+      border: 1px dashed green;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+    }
+    .left {
+      float: left;
+    }
+    .clear {
+      clear: both;
+    }
+    .ml-50 {
+      margin-left: 50px;
+    }
+    .mb-30 {
+      margin-bottom: 30px;
+    }
+    .left-20 {
+      margin-left: -20px;
+    }
+    .right-20 {
+      margin-right: -20px;
+    }
+    .top-20 {
+      margin-top: -20px;
+    }
+    .bottom-20 {
+      margin-bottom: -20px;
+    }
+    .overflow-hidden {
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="ml-50 container">
+    <div class="mb-30 overflow-hidden">
+      <p>left负值: 自身向左移动</p>
+      <div>
+        <div class="box left left-20">盒子1</div>
+        <div class="box left">盒子2</div>
+      </div>
+    </div>
+
+    <div class="mb-30 overflow-hidden">
+      <p>right负值: 自身不变，右侧元素向左移动</p>
+      <div>
+        <div class="box left right-20">盒子1</div>
+        <div class="box left">盒子2</div>
+      </div>
+    </div>
+
+    <div class="mb-30 overflow-hidden">
+      <p>top负值: 自身向上移动</p>
+      <div>
+        <div class="box top-20">盒子3</div>
+        <div class="box">盒子4</div>
+      </div>
+    </div>
+
+    <div class="mb-30 overflow-hidden">
+      <p>bottom负值: 自身不动，后面元素向上移动</p>
+      <div>
+        <div class="box bottom-20">盒子3</div>
+        <div class="box">盒子4</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
